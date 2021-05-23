@@ -19,9 +19,21 @@ class BallPane extends StatelessWidget {
         centerTitle: false,
         backgroundColor: Colors.blue.shade900,
       ),
-      body: Container(
-        child: Text('this is container'),
-      ),
+      body: Ball(),
+    );
+  }
+}
+
+class Ball extends StatefulWidget {
+  @override
+  _BallState createState() => _BallState();
+}
+
+class _BallState extends State<Ball> {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Image.asset('images/ball1.png'),
     );
   }
 }
